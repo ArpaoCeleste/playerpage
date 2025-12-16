@@ -296,7 +296,7 @@ include 'header.php'; ?>
 
 <section id="hero" class="relative min-h-screen flex items-center bg-[#0b0216] overflow-hidden pt-20 md:pt-0">
 
-    <div id="particles-js" class="absolute inset-0 z-0 opacity-40"></div>
+    <div id="particles-js" class="absolute inset-0 z-0 opacity-40 hidden md:block"></div>
 
     <div
         class="absolute top-0 left-0 w-72 h-72 md:w-96 md:h-96 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob">
@@ -397,7 +397,7 @@ include 'header.php'; ?>
                     </a>
                 </div>
 
-             
+
                 <div class="mt-8 grid grid-cols-4 gap-3 md:gap-6 max-w-md mx-auto">
                     <div class="text-center">
                         <div class="text-xl md:text-2xl font-black text-white">17</div>
@@ -522,7 +522,7 @@ include 'header.php'; ?>
 
         </div>
         <br>
- 
+
         <div class="mt-16 reveal from-bottom">
             <div class="inline-flex items-center gap-3 mb-4 w-full justify-center">
                 <span class="w-12 h-[2px] bg-gradient-to-r from-transparent to-blue-600"></span>
@@ -536,7 +536,7 @@ include 'header.php'; ?>
 
             <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 max-w-5xl mx-auto">
 
-          
+
                 <div class="flex flex-col items-center group">
                     <div
                         class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-gray-50 border border-gray-200 p-3 flex items-center justify-center transition-transform duration-300 group-hover:scale-110 shadow-xl shadow-blue-500/10">
@@ -553,7 +553,7 @@ include 'header.php'; ?>
                     <i class="fas fa-chevron-down text-blue-500 text-sm"></i>
                 </div>
 
-             
+
                 <div class="flex flex-col items-center group">
                     <div
                         class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-gray-50 border border-gray-200 p-3 flex items-center justify-center transition-transform duration-300 group-hover:scale-110 shadow-xl shadow-blue-500/10">
@@ -570,7 +570,7 @@ include 'header.php'; ?>
                     <i class="fas fa-chevron-down text-blue-500 text-sm"></i>
                 </div>
 
-            
+
                 <div class="flex flex-col items-center group">
                     <div
                         class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-gray-50 border border-gray-200 p-3 flex items-center justify-center transition-transform duration-300 group-hover:scale-110 shadow-xl shadow-blue-500/10">
@@ -632,7 +632,7 @@ include 'header.php'; ?>
                     class="relative bg-white p-6 border border-gray-200 rounded-2xl h-full flex flex-col transition-all duration-500 shadow-xl shadow-blue-500/10">
 
 
-                    <div class="w-full h-40 rounded-xl overflow-hidden mb-6 bg-gray-100">
+                    <div class="w-full h-40 rounded-xl overflow-hidden mb-6 ">
                         <img src="fotosmariana/tacaligafutebolfeminino.jpg" alt="Troféu III Divisão"
                             class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
                     </div>
@@ -649,14 +649,14 @@ include 'header.php'; ?>
                     </h3>
                     <p class="text-blue-600 text-sm font-semibold uppercase tracking-wider mb-4">Futebol Feminino</p>
 
-           
+
                     <div class="flex items-center gap-3 mb-4 text-gray-600">
                         <img src="fotosmariana/FCPortologo.png" alt="FC Porto"
                             class="w-8 h-8 rounded-full object-contain bg-white ">
                         <span class="font-semibold">FC Porto</span>
                     </div>
 
-                 
+
                     <div class="mt-auto pt-4 border-t border-gray-100">
                         <div class="flex items-center justify-between text-sm">
                             <span class="text-gray-500">Competição Nacional</span>
@@ -676,7 +676,7 @@ include 'header.php'; ?>
                 <div
                     class="relative bg-white p-6 border border-gray-200 rounded-2xl h-full flex flex-col transition-all duration-500 shadow-xl shadow-blue-500/10">
 
-                    <div class="w-full h-40 rounded-xl overflow-hidden mb-6 bg-gray-100">
+                    <div class="w-full h-40 rounded-xl overflow-hidden mb-6 ">
                         <img src="fotosmariana/tacaligafutebolfeminino.jpg" alt="Troféu Camp. Nacional"
                             class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
                     </div>
@@ -722,7 +722,7 @@ include 'header.php'; ?>
                     class="relative bg-white p-6 border border-gray-200 rounded-2xl h-full flex flex-col transition-all duration-500 shadow-xl shadow-blue-500/10">
 
 
-                    <div class="w-full h-40 rounded-xl overflow-hidden mb-6 bg-gray-100">
+                    <div class="w-full h-40 rounded-xl overflow-hidden mb-6 ">
                         <img src="fotosmariana/tacaligafutebolfeminino.jpg" alt="Troféu AF Porto"
                             class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
                     </div>
@@ -769,7 +769,7 @@ include 'header.php'; ?>
                     class="relative bg-white p-6 border border-gray-200 rounded-2xl h-full flex flex-col transition-all duration-500 shadow-xl shadow-blue-500/10">
 
 
-                    <div class="w-full h-40 rounded-xl overflow-hidden mb-6 bg-gray-100">
+                    <div class="w-full h-40 rounded-xl overflow-hidden mb-6 ">
                         <img src="fotosmariana/tacaligafutebolfeminino.jpg" alt="Troféu AF Porto"
                             class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
                     </div>
@@ -817,7 +817,7 @@ include 'header.php'; ?>
                     class="relative bg-white p-6 border border-gray-200 rounded-2xl h-full flex flex-col transition-all duration-500 shadow-xl shadow-blue-500/10">
 
 
-                    <div class="w-full h-40 rounded-xl overflow-hidden mb-6 bg-gray-100">
+                    <div class="w-full h-40 rounded-xl overflow-hidden mb-6 ">
                         <img src="fotosmariana/tacaligafutebolfeminino.jpg" alt="Troféu AF Porto"
                             class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
                     </div>
@@ -863,7 +863,7 @@ include 'header.php'; ?>
                     class="relative bg-white p-6 border border-gray-200 rounded-2xl h-full flex flex-col transition-all duration-500 shadow-xl shadow-blue-500/10">
 
 
-                    <div class="w-full h-40 rounded-xl overflow-hidden mb-6 bg-gray-100">
+                    <div class="w-full h-40 rounded-xl overflow-hidden mb-6 ">
                         <img src="fotosmariana/tacaligafutebolfeminino.jpg" alt="Troféu AF Porto"
                             class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
                     </div>
@@ -924,7 +924,7 @@ include 'header.php'; ?>
 <section id="gallery-slider"
     class="relative w-full h-[85vh] min-h-[750px] bg-[#0b0216] overflow-hidden font-sans group reveal from-bottom">
 
-    <div id="particles-js-gallery" class="absolute inset-0 z-0 opacity-20 pointer-events-none"></div>
+    <div id="particles-js-gallery" class="absolute inset-0 z-0 opacity-20 pointer-events-none hidden md:block"></div>
 
 
     <div id="demo" class="absolute inset-0 w-full h-full z-10"></div>
@@ -1017,7 +1017,7 @@ include 'header.php'; ?>
     <div class="absolute top-0 left-0 w-full h-32 "></div>
 
     <div class="container mx-auto px-6 relative z-10">
-  
+
         <div class="text-center mb-12 md:mb-16 reveal from-bottom">
             <div class="inline-flex items-center gap-3 mb-4">
                 <span class="w-12 h-[2px] bg-gradient-to-r from-transparent to-blue-600"></span>
@@ -1030,7 +1030,7 @@ include 'header.php'; ?>
             <p class="text-gray-500 text-lg max-w-xl mx-auto">Os melhores momentos em campo</p>
         </div>
 
-       
+
         <div class="max-w-4xl mx-auto reveal from-bottom">
             <div class="relative rounded-2xl overflow-hidden shadow-2xl shadow-blue-900/20 border border-white/10">
                 <div class="aspect-video">
@@ -1074,7 +1074,7 @@ include 'header.php'; ?>
                 entry.target.classList.remove('active');
             }
         });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.05 });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 
@@ -1128,15 +1128,11 @@ include 'header.php'; ?>
 
     const _ = (id) => document.getElementById(id);
 
+    const isMobile = window.innerWidth < 768;
+
     const cards = data.map((i, index) =>
         `<div class="card absolute left-0 top-0 shadow-2xl overflow-hidden border border-white/20 origin-center transition-all duration-500 brightness-[0.7] bg-[#0b0216]" id="card${index}">
-       
-            <img src="${i.image}" class="absolute inset-0 w-full h-full object-cover blur-2xl opacity-60 scale-125">
-            
-        
-            <img src="${i.image}" class="relative w-full h-full object-contain z-10 drop-shadow-2xl"> 
-            
-          
+            <img src="${i.image}" class="relative w-full h-full object-contain z-10 drop-shadow-2xl" loading="lazy"> 
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-20"></div> 
         </div>`
     ).join('');
@@ -1402,8 +1398,7 @@ include 'header.php'; ?>
     async function start() {
         await Promise.all(data.map(({ image }) => loadImage(image)));
         init();
-        window.addEventListener('resize', () => { location.reload(); });
-        startAutoPlay(); // Start autoplay after initialization
+        startAutoPlay();
     }
 
     window.forceStep = async function () {
@@ -1411,7 +1406,7 @@ include 'header.php'; ?>
             clearTimeout(autoPlayTimer);
             isAnimating = true;
             await step();
-            isAnimating = false; // Reset isAnimating after step completes
+            isAnimating = false;
             startAutoPlay();
         }
     }
@@ -1421,7 +1416,7 @@ include 'header.php'; ?>
             clearTimeout(autoPlayTimer);
             isAnimating = true;
             await stepPrev();
-            isAnimating = false; // Reset isAnimating after stepPrev completes
+            isAnimating = false;
             startAutoPlay();
         }
     }
@@ -1430,7 +1425,7 @@ include 'header.php'; ?>
 </script>
 
 <script>
-    // Typing Animation for Hero Name
+
     function typeText(element, text, delay = 100) {
         return new Promise(resolve => {
             let i = 0;
@@ -1446,15 +1441,15 @@ include 'header.php'; ?>
         });
     }
 
-    // Start typing when page loads
+
     window.addEventListener('load', async () => {
         const nameEl = document.getElementById('heroName');
         const surnameEl = document.getElementById('heroSurname');
 
         if (nameEl && surnameEl) {
-            await new Promise(r => setTimeout(r, 500)); // Wait 500ms
+            await new Promise(r => setTimeout(r, 500));
             await typeText(nameEl, 'Mariana', 120);
-            await new Promise(r => setTimeout(r, 200)); // Small pause
+            await new Promise(r => setTimeout(r, 200));
             await typeText(surnameEl, 'Queirós', 120);
         }
     });

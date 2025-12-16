@@ -5,7 +5,6 @@ include 'header.php';
 
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
-
     @keyframes fadeInUp {
         from {
             opacity: 0;
@@ -131,7 +130,7 @@ include 'header.php';
         padding: 2rem;
     }
 
-  
+
     #sparklesCanvas {
         position: fixed;
         top: 0;
@@ -192,7 +191,7 @@ include 'header.php';
                     </div>
                 </div>
 
-           
+
                 <div class="space-y-2 animate-fadeInRight delay-300">
                     <div class="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-2">
                         <i class="fas fa-user text-blue-400 w-4 text-sm"></i>
@@ -231,7 +230,7 @@ include 'header.php';
                     </div>
                 </div>
 
-   
+
                 <div class="flex flex-wrap gap-2 animate-fadeInRight delay-400">
                     <span
                         class="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-xs font-semibold border border-blue-500/30">
@@ -251,10 +250,10 @@ include 'header.php';
         </div>
     </div>
 
-   
+
     <div class="container mx-auto px-6 py-12">
 
-      
+
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 reveal from-bottom">
             <div class="info-card-container text-center">
                 <p class="text-4xl font-black text-blue-400 counter" data-target="46">0</p>
@@ -274,7 +273,7 @@ include 'header.php';
             </div>
         </div>
 
- 
+
         <div class="info-card-container mb-8 reveal from-left">
             <h3 class="text-xl font-black text-white mb-4 flex items-center gap-2">
                 <i class="fas fa-futbol text-blue-400"></i> Estatísticas Seniores
@@ -294,7 +293,7 @@ include 'header.php';
                         <tr class="border-b border-white/5">
                             <td class="py-2">2025/26</td>
                             <td class="py-2 flex items-center gap-2">
-                                <img src="fotosmariana/FCPortologo.png" class="w-5 h-5"> FC Porto Fem. B
+                                <img src="fotosmariana/FCPortologo.png" class="h-5 w-auto"> FC Porto Fem. B
                             </td>
                             <td class="text-center py-2">2</td>
                             <td class="text-center py-2">-</td>
@@ -303,7 +302,7 @@ include 'header.php';
                         <tr class="border-b border-white/5">
                             <td class="py-2">2025/26</td>
                             <td class="py-2 flex items-center gap-2">
-                                <img src="fotosmariana/FCPortologo.png" class="w-5 h-5"> FC Porto Fem.
+                                <img src="fotosmariana/FCPortologo.png" class="h-5 w-auto"> FC Porto Fem.
                             </td>
                             <td class="text-center py-2">5</td>
                             <td class="text-center py-2">-</td>
@@ -312,7 +311,7 @@ include 'header.php';
                         <tr class="border-b border-white/5">
                             <td class="py-2">2024/25</td>
                             <td class="py-2 flex items-center gap-2">
-                                <img src="fotosmariana/FCPortologo.png" class="w-5 h-5"> FC Porto Fem.
+                                <img src="fotosmariana/FCPortologo.png" class="h-5 w-auto"> FC Porto Fem.
                             </td>
                             <td class="text-center py-2">22</td>
                             <td class="text-center py-2">2</td>
@@ -338,7 +337,7 @@ include 'header.php';
             </div>
         </div>
 
-    
+
         <div class="info-card-container mb-8 reveal from-right" style="transition-delay: 100ms;">
             <h3 class="text-xl font-black text-white mb-4 flex items-center gap-2">
                 <i class="fas fa-flag text-blue-400"></i> Seleção Nacional
@@ -437,7 +436,7 @@ include 'header.php';
     </div>
 
     <script>
-        // Counter Animation
+
         function animateCounter(element) {
             const target = parseInt(element.getAttribute('data-target'));
             const duration = 5000;
@@ -457,7 +456,7 @@ include 'header.php';
             updateCounter();
         }
 
-        // Intersection Observer for counter animation
+
         const counters = document.querySelectorAll('.counter');
         const counterObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -475,7 +474,7 @@ include 'header.php';
 <?php include 'footer.php'; ?>
 
 <script>
-    // Sparkles/Bolas a piscar - Background Animation
+
     const canvas = document.getElementById('sparklesCanvas');
     const ctx = canvas.getContext('2d');
 
@@ -488,9 +487,9 @@ include 'header.php';
 
     const COLORS = ["#3b82f6", "#60a5fa", "#93c5fd", "#ffffff"];
 
-    // Sparkles array
+
     const sparkles = [];
-    // Mobile: 0 partículas | Desktop: 35 partículas
+
     const isMobile = window.innerWidth < 768;
     const NUM_SPARKLES = isMobile ? 30 : 80;
 
@@ -509,21 +508,20 @@ include 'header.php';
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
         sparkles.forEach(s => {
-            // Update alpha (blinking effect)
+
             s.alpha += s.alphaSpeed;
 
-            // Reverse direction when hitting limits
             if (s.alpha <= 0.1 || s.alpha >= 1) {
                 s.alphaSpeed *= -1;
             }
             s.alpha = Math.max(0.1, Math.min(1, s.alpha));
 
-            // Draw sparkle
+
             ctx.beginPath();
             ctx.arc(s.x, s.y, s.size, 0, Math.PI * 2);
             ctx.fillStyle = s.color.replace(')', `, ${s.alpha})`).replace('rgb', 'rgba').replace('#', '');
 
-            // Convert hex to rgba
+
             const hex = s.color;
             const r = parseInt(hex.slice(1, 3), 16);
             const g = parseInt(hex.slice(3, 5), 16);
@@ -540,7 +538,7 @@ include 'header.php';
 </script>
 
 <script>
-    // Scroll Reveal Animation
+
     const reveals = document.querySelectorAll('.reveal');
 
     const revealObserver = new IntersectionObserver((entries) => {
@@ -551,7 +549,7 @@ include 'header.php';
                 entry.target.classList.remove('active');
             }
         });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.05 });
 
     reveals.forEach(reveal => revealObserver.observe(reveal));
 </script>

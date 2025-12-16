@@ -121,22 +121,22 @@ include 'header.php'; ?>
             </h2>
             <div id="photo-gallery" class="grid grid-cols-2 md:grid-cols3 lg:grid-cols-4 gap-4 mb-8"></div>
 
-    
+
             <div class="flex justify-center items-center gap-4 md:gap-8 mt-12 w-full select-none">
-              
+
                 <button id="prevBtn"
                     class="group w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 rounded-full transition-all disabled:opacity-30 disabled:cursor-not-allowed shadow-lg shadow-blue-900/50 hover:shadow-blue-800/50 hover:scale-110 active:scale-95">
                     <i
                         class="fas fa-chevron-left text-white text-lg md:text-xl group-hover:-translate-x-1 transition-transform"></i>
                 </button>
 
-              
+
                 <div
                     class="px-6 py-3 bg-white/5 border border-white/10 rounded-full backdrop-blur-sm min-w-[120px] text-center">
                     <span id="pageInfo" class="text-white font-bold text-sm md:text-base tracking-wide"></span>
                 </div>
 
-              
+
                 <button id="nextBtn"
                     class="group w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 rounded-full transition-all disabled:opacity-30 disabled:cursor-not-allowed shadow-lg shadow-blue-900/50 hover:shadow-blue-800/50 hover:scale-110 active:scale-95">
                     <i
@@ -187,7 +187,7 @@ include 'header.php'; ?>
                     </div>
                 </a>
 
-             
+
                 <a href="https://www.fcporto.pt/pt/noticias/20250702-pt-quero-mostrar-que-este-voto-de-confianca-foi-merecido"
                     target="_blank" rel="noopener noreferrer"
                     class="group relative bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-blue-500/50 transition-all duration-300 h-[320px] block reveal from-bottom"
@@ -256,7 +256,7 @@ include 'header.php'; ?>
                     </div>
                 </a>
 
-          
+
                 <a href="https://www.diariodesantotirso.pt/mariana-queiros-marcou-na-goleada-do-fc-porto-por-28-golos/"
                     target="_blank" rel="noopener noreferrer"
                     class="group relative bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-blue-500/50 transition-all duration-300 h-[320px] block reveal from-bottom"
@@ -583,7 +583,7 @@ include 'header.php'; ?>
             </div>
         `).join('');
 
-        // Trigger stagger animation
+      
         setTimeout(() => {
             document.querySelectorAll('.photo-stagger').forEach(el => {
                 el.style.opacity = '1';
@@ -595,7 +595,7 @@ include 'header.php'; ?>
         document.getElementById('prevBtn').disabled = currentPage === 1;
         document.getElementById('nextBtn').disabled = currentPage === totalPages;
 
-        // Preload próxima página
+        
         preloadImages();
     }
 
@@ -663,7 +663,7 @@ include 'header.php'; ?>
 </script>
 
 <script>
-    // Scroll Reveal Animation
+   
     const reveals = document.querySelectorAll('.reveal');
 
     const revealObserver = new IntersectionObserver((entries) => {
@@ -674,13 +674,13 @@ include 'header.php'; ?>
                 entry.target.classList.remove('active');
             }
         });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.05 });
 
     reveals.forEach(reveal => revealObserver.observe(reveal));
 </script>
 
 <script>
-    // Sparkles Animation
+   
     const canvas = document.getElementById('sparklesCanvas');
     const ctx = canvas.getContext('2d');
 
@@ -720,7 +720,7 @@ include 'header.php'; ?>
 
             ctx.beginPath();
             ctx.arc(s.x, s.y, s.size, 0, Math.PI * 2);
-            
+
             const hex = s.color;
             const r = parseInt(hex.slice(1, 3), 16);
             const g = parseInt(hex.slice(3, 5), 16);

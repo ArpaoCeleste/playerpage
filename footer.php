@@ -59,7 +59,7 @@
 </footer>
 
 <script>
-    // Scroll to Top Button
+
     const scrollToTopBtn = document.getElementById('scrollToTop');
 
     window.addEventListener('scroll', function () {
