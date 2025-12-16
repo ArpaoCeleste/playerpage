@@ -3,6 +3,13 @@
 $pageTitle = "Mariana Queirós - Index";
 include 'header.php'; ?>
 
+
+<link rel="preload" as="image" href="fotosmariana/imagemnova26.jpg">
+<link rel="preload" as="image" href="fotosmariana/1jogo.jpg">
+<link rel="preload" as="image" href="fotosmariana/marianaportugal.jpg">
+<link rel="preload" as="image" href="fotosmariana/fotocomtaca.jpg">
+<link rel="preload" as="image" href="fotosmariana/renovacao.jpg">
+
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="https://cdn.tailwindcss.com"></script>
 
@@ -1132,7 +1139,7 @@ include 'header.php'; ?>
 
     const cards = data.map((i, index) =>
         `<div class="card absolute left-0 top-0 shadow-2xl overflow-hidden border border-white/20 origin-center transition-all duration-500 brightness-[0.7] bg-[#0b0216]" id="card${index}">
-            <img src="${i.image}" class="relative w-full h-full object-contain z-10 drop-shadow-2xl" loading="lazy"> 
+            <img src="${i.image}" class="relative w-full h-full object-contain z-10 drop-shadow-2xl"> 
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-20"></div> 
         </div>`
     ).join('');
@@ -1190,7 +1197,7 @@ include 'header.php'; ?>
 
             offsetLeft = windowWidth - 650;
             offsetTop = containerHeight - cardHeight - 200;
-            // Desktop: Push more to left (4%)
+
             gsap.set(".details", { top: "18%", left: "4%", x: 0, width: "auto", textAlign: "left" });
             gsap.set(".details .place-box", { justifyContent: "flex-start", display: "block" });
             gsap.set(".details .desc", { margin: "24px 0 0 0", borderLeft: "2px solid rgba(59, 130, 246, 0.8)", borderTop: "none", paddingTop: "0" });
@@ -1201,7 +1208,8 @@ include 'header.php'; ?>
         gsap.set("#pagination", {
             left: isMobile ? '50%' : offsetLeft,
             x: isMobile ? '-50%' : 0,
-            top: offsetTop + cardHeight + (isMobile ? 20 : 100),
+            top: isMobile ? 'auto' : offsetTop + cardHeight + 100,
+            bottom: isMobile ? '5%' : 'auto',
             width: paginationWidth,
             opacity: 0,
             zIndex: 60
@@ -1210,7 +1218,7 @@ include 'header.php'; ?>
         gsap.set(getCard(active), { x: 0, y: 0, width: windowWidth, height: containerHeight, zIndex: 10, opacity: 1 });
         gsap.set(getCardContent(active), { x: 0, y: 0, opacity: 0 });
 
-        gsap.set(detailsActive, { opacity: 0, zIndex: 22, x: isMobile ? "-50%" : -200 }); // Fix mobile centered X
+        gsap.set(detailsActive, { opacity: 0, zIndex: 22, x: isMobile ? "-50%" : -200 });
         gsap.set(detailsInactive, { opacity: 0, zIndex: 12 });
         gsap.set(`${detailsInactive} .text`, { y: 100 });
         gsap.set(`${detailsInactive} .title-1`, { y: 100 });
@@ -1294,43 +1302,65 @@ include 'header.php'; ?>
         updateDetails(detailsActive, order[0]);
         _('slide-numbers-container').innerText = order[0] + 1;
 
-        gsap.set(detailsActive, { zIndex: 22, display: 'block' });
-        gsap.set(detailsInactive, { zIndex: 12 });
+        const [active, ...rest] = order;
+
 
         if (isMobile) {
-            gsap.to(detailsActive, { opacity: 1, x: "-50%", delay: 0.2, ease });
-        } else {
-            gsap.to(detailsActive, { opacity: 1, x: 0, delay: 0.2, ease });
+
+            data.forEach((_, i) => {
+                gsap.set(getCard(i), { opacity: 0, zIndex: 0 });
+                gsap.set(getCardContent(i), { opacity: 0 });
+            });
+
+
+            gsap.set(getCard(active), {
+                x: 0, y: 0, width: window.innerWidth, height: containerHeight,
+                borderRadius: 0, opacity: 1, zIndex: 20, scale: 1
+            });
+            gsap.set(getCardContent(active), { opacity: 0 });
+
+
+            gsap.set(detailsActive, { zIndex: 22, opacity: 1, x: "-50%", display: 'block' });
+            gsap.set(detailsInactive, { opacity: 0, zIndex: 12 });
+            gsap.set(`${detailsActive} .text`, { y: 0 });
+            gsap.set(`${detailsActive} .title-1`, { y: 0 });
+            gsap.set(`${detailsActive} .title-2`, { y: 0 });
+            gsap.set(`${detailsActive} .desc`, { y: 0 });
+
+            gsap.set(".progress-sub-foreground", { width: (100 / order.length) * (active + 1) + "%" });
+
+            isAnimating = false;
+            if (resolve) resolve();
+            return;
         }
+
+
+        gsap.set(detailsActive, { zIndex: 22, display: 'block' });
+        gsap.set(detailsInactive, { zIndex: 12 });
+        gsap.to(detailsActive, { opacity: 1, x: 0, delay: 0.2, ease });
 
         animateDetailsEntry(detailsActive);
 
-        gsap.to(detailsInactive, { opacity: 0, x: isMobile ? "-60%" : -50, duration: 0.5 });
+        gsap.to(detailsInactive, { opacity: 0, x: -50, duration: 0.5 });
         gsap.set(`${detailsInactive} .text`, { y: 100 });
         gsap.set(`${detailsInactive} .title-1`, { y: 100 });
         gsap.set(`${detailsInactive} .title-2`, { y: 100 });
         gsap.set(`${detailsInactive} .desc`, { y: 50 });
 
-        const [active, ...rest] = order;
+        const prv = rest[rest.length - 1];
 
-        // Identify the PREVIOUS active card (the one that was just background)
-        const prv = rest[rest.length - 1]; // The card that is fading out/moving back
-
-        gsap.set(getCard(prv), { zIndex: 10 }); // Move old background to back
-        // Sapo: Sync duration with active card transition (default 0.5s) to avoid race conditions
-        gsap.to(getCard(prv), { scale: 1.5, ease, duration: 0.5 }); // ZOOM EFFECT
+        gsap.set(getCard(prv), { zIndex: 10 });
+        gsap.to(getCard(prv), { scale: 1.5, ease, duration: 0.5 });
 
         gsap.set(getCard(active), { zIndex: 20, opacity: 1 });
         gsap.to(getCard(active), {
-            x: 0, y: 0, ease, width: window.innerWidth, height: containerHeight, borderRadius: 0, duration: 0.5, // Explicit duration
+            x: 0, y: 0, ease, width: window.innerWidth, height: containerHeight, borderRadius: 0, duration: 0.5,
             onComplete: () => {
                 isAnimating = false;
 
-                // Position the old background (prv) into its new place in the stack
                 const lastIndex = rest.length - 1;
                 const xNewPrv = offsetLeft + (lastIndex * (cardWidth + gap));
 
-                // Sapo: KILL previous animation (the zoom) to ensure it doesn't override our reset
                 gsap.killTweensOf(getCard(prv));
 
                 gsap.set(getCard(prv), {
@@ -1354,12 +1384,12 @@ include 'header.php'; ?>
                 gsap.set(getCard(i), { zIndex: 30 });
                 gsap.to(getCard(i), {
                     x: xNew, y: offsetTop, width: cardWidth, height: cardHeight, ease,
-                    borderRadius: 8, opacity: 1, scale: 1
+                    borderRadius: 8, opacity: 1, scale: 1, duration: 0.5
                 });
 
                 gsap.to(getCardContent(i), {
                     x: xNew, y: offsetTop + cardHeight + 15,
-                    width: cardWidth, opacity: 1, zIndex: 40, ease
+                    width: cardWidth, opacity: 1, zIndex: 40, ease, duration: 0.5
                 });
             }
         });

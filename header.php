@@ -38,6 +38,20 @@
         content="Futebolista profissional do FC Porto Feminino. Médio, 17 anos, internacional portuguesa Sub-18.">
 
 
+    <meta name="theme-color" content="#0b0216">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+
+    <meta name="geo.region" content="PT-13"> <!-- Porto -->
+    <meta name="geo.placename" content="Santo Tirso">
+    <meta name="geo.position" content="41.3431;-8.4716">
+    <meta name="ICBM" content="41.3431, -8.4716">
+
+    <meta property="og:locale" content="pt_PT">
+    <meta property="og:site_name" content="Mariana Queirós Oficial">
+
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -62,6 +76,9 @@
             }
         },
         "height": "170cm",
+        "gender": "Female",
+        "knowsLanguage": "Portuguese",
+        "disambiguatingDescription": "Futebolista pé direito, Defesa Central / Médio do FC Porto.",
         "nationality": {
             "@type": "Country",
             "name": "Portugal"
@@ -101,6 +118,20 @@
                 "name": "AR São Martinho",
                 "sport": "Futebol Feminino",
                 "description": "Primeiro clube"
+            }
+        ],
+        "interactionStatistic": [
+            {
+                "@type": "InteractionCounter",
+                "interactionType": "https://schema.org/WatchAction",
+                "userInteractionCount": 27,
+                "description": "Jogos Oficiais (Carreira Sénior/Formação registada)"
+            },
+            {
+                "@type": "InteractionCounter",
+                "interactionType": "https://schema.org/AchieveAction",
+                "userInteractionCount": 2,
+                "description": "Golos Marcados em Competições Oficiais"
             }
         ],
         "award": [
@@ -378,9 +409,9 @@
             <a href="/"
                 class="text-lg text-white uppercase tracking-widest hover:text-blue-400 transition-colors mobile-link block w-full text-center py-2">Início</a>
             <a href="sobre.php"
-                class="text-lg text-white uppercase tracking-widest hover:text-blue-400 transition-colors mobile-link block w-full text-center py-2">Media</a>
+                class="text-lg text-white uppercase tracking-widest hover:text-blue-400 transition-colors mobile-link block w-full text-center py-2">Sobre</a>
             <a href="media.php"
-                class="text-lg text-white uppercase tracking-widest hover:text-blue-400 transition-colors mobile-link block w-full text-center py-2">Galeria</a>
+                class="text-lg text-white uppercase tracking-widest hover:text-blue-400 transition-colors mobile-link block w-full text-center py-2">Media</a>
             <a href="index.php#highlights"
                 class="text-lg text-white uppercase tracking-widest hover:text-blue-400 transition-colors mobile-link block w-full text-center py-2">Highlights</a>
         </div>
