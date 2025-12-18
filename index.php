@@ -1,6 +1,6 @@
 <?php
 
-$pageTitle = "Mariana Queirós - Index";
+$pageTitle = "Portefólio - Mariana Queirós";
 include 'header.php'; ?>
 
 

@@ -111,7 +111,7 @@ include 'header.php'; ?>
                         <p class="text-gray-400 text-sm">Short</p>
                     </div>
                 </div>
-            </div>
+    
         </section>
 
         <section class="reveal from-right">
@@ -583,7 +583,7 @@ include 'header.php'; ?>
             </div>
         `).join('');
 
-      
+
         setTimeout(() => {
             document.querySelectorAll('.photo-stagger').forEach(el => {
                 el.style.opacity = '1';
@@ -595,7 +595,7 @@ include 'header.php'; ?>
         document.getElementById('prevBtn').disabled = currentPage === 1;
         document.getElementById('nextBtn').disabled = currentPage === totalPages;
 
-        
+
         preloadImages();
     }
 
@@ -663,7 +663,7 @@ include 'header.php'; ?>
 </script>
 
 <script>
-   
+
     const reveals = document.querySelectorAll('.reveal');
 
     const revealObserver = new IntersectionObserver((entries) => {
@@ -680,7 +680,7 @@ include 'header.php'; ?>
 </script>
 
 <script>
-   
+
     const canvas = document.getElementById('sparklesCanvas');
     const ctx = canvas.getContext('2d');
 

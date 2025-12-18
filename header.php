@@ -43,7 +43,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 
-    <meta name="geo.region" content="PT-13"> <!-- Porto -->
+    <meta name="geo.region" content="PT-13"> 
     <meta name="geo.placename" content="Santo Tirso">
     <meta name="geo.position" content="41.3431;-8.4716">
     <meta name="ICBM" content="41.3431, -8.4716">
