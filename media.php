@@ -497,8 +497,9 @@ include 'header.php'; ?>
 
 <script>
     const allPhotos = [
-
-
+        { src: 'fotosmariana/novaimagemnova1.jpg', caption: 'Campeonato 2025/2026' },
+        { src: 'fotosmariana/novaimagemnova2.jpg', caption: 'Campeonato 2025/2026' },
+        { src: 'fotosmariana/novaimagemnova3.jpg', caption: 'Campeonato 2025/2026' },
         { src: 'fotosmariana/imagemnova.jpg', caption: 'Campeonato 2025/2026' },
         { src: 'fotosmariana/imagemnova2.jpg', caption: 'Stop the Purple' },
         { src: 'fotosmariana/imagemnova3.jpg', caption: 'Campeonato 2025/2026' },
@@ -733,6 +734,60 @@ include 'header.php'; ?>
     }
 
     animateSparkles();
+</script>
+
+<script>
+    const galleryContainer = document.getElementById('photo-gallery');
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    galleryContainer.addEventListener('touchstart', e => {
+        touchStartX = e.changedTouches[0].screenX;
+    }, {passive: true});
+
+    galleryContainer.addEventListener('touchend', e => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    }, {passive: true});
+
+    function handleSwipe() {
+        const swipeThreshold = 50;
+        
+        if (touchEndX < touchStartX - swipeThreshold) {
+            const nextBtn = document.getElementById('nextBtn');
+            if (!nextBtn.disabled) nextBtn.click();
+        }
+        
+        if (touchEndX > touchStartX + swipeThreshold) {
+            const prevBtn = document.getElementById('prevBtn');
+            if (!prevBtn.disabled) prevBtn.click();
+        }
+    }
+
+    const lightboxEl = document.getElementById('lightbox');
+    let lbTouchStartX = 0;
+    let lbTouchEndX = 0;
+
+    lightboxEl.addEventListener('touchstart', e => {
+        lbTouchStartX = e.changedTouches[0].screenX;
+    }, {passive: true});
+
+    lightboxEl.addEventListener('touchend', e => {
+        lbTouchEndX = e.changedTouches[0].screenX;
+        handleLightboxSwipe();
+    }, {passive: true});
+
+    function handleLightboxSwipe() {
+        const swipeThreshold = 50;
+        
+        if (lbTouchEndX < lbTouchStartX - swipeThreshold) {
+            nextPhotoInLightbox();
+        }
+        
+        if (lbTouchEndX > lbTouchStartX + swipeThreshold) {
+            prevPhotoInLightbox();
+        }
+    }
 </script>
 
 <?php include 'footer.php'; ?>
