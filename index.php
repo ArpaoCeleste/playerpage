@@ -631,11 +631,8 @@ include 'header.php'; ?>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-8">
 
 
-            <div class="relative reveal from-bottom select-none"
+            <div class="group relative reveal from-bottom select-none"
                 style="transition-delay: 0ms; -webkit-tap-highlight-color: transparent;">
-                <div
-                    class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-500 rounded-2xl opacity-0 group-hover:opacity-100 blur transition-all duration-500">
-                </div>
                 <div
                     class="relative bg-white p-6 border border-gray-200 rounded-2xl h-full flex flex-col transition-all duration-500 shadow-xl shadow-blue-500/10">
 
@@ -652,7 +649,7 @@ include 'header.php'; ?>
                     </div>
 
                     <h3
-                        class="text-2xl md:text-3xl font-black text-gray-900 uppercase leading-tight mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                        class="text-2xl md:text-3xl font-black text-gray-900 uppercase leading-tight mb-2 transition-colors duration-300">
                         III Divisão
                     </h3>
                     <p class="text-blue-600 text-sm font-semibold uppercase tracking-wider mb-4">Futebol Feminino</p>
@@ -677,11 +674,8 @@ include 'header.php'; ?>
             </div>
 
 
-            <div class="relative reveal from-bottom select-none"
+            <div class="group relative reveal from-bottom select-none"
                 style="transition-delay: 150ms; -webkit-tap-highlight-color: transparent;">
-                <div
-                    class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-500 rounded-2xl opacity-0 group-hover:opacity-100 blur transition-all duration-500">
-                </div>
                 <div
                     class="relative bg-white p-6 border border-gray-200 rounded-2xl h-full flex flex-col transition-all duration-500 shadow-xl shadow-blue-500/10">
 
@@ -698,7 +692,7 @@ include 'header.php'; ?>
 
 
                     <h3
-                        class="text-2xl md:text-3xl font-black text-gray-900 uppercase leading-tight mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                        class="text-2xl md:text-3xl font-black text-gray-900 uppercase leading-tight mb-2 transition-colors duration-300">
                         Camp. Nacional
                     </h3>
                     <p class="text-blue-600 text-sm font-semibold uppercase tracking-wider mb-4">Juniores Feminino</p>
@@ -723,11 +717,8 @@ include 'header.php'; ?>
             </div>
 
 
-            <div class="relative reveal from-bottom select-none"
+            <div class="group relative reveal from-bottom select-none"
                 style="transition-delay: 300ms; -webkit-tap-highlight-color: transparent;">
-                <div
-                    class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-500 rounded-2xl opacity-0 group-hover:opacity-100 blur transition-all duration-500">
-                </div>
                 <div
                     class="relative bg-white p-6 border border-gray-200 rounded-2xl h-full flex flex-col transition-all duration-500 shadow-xl shadow-blue-500/10">
 
@@ -745,7 +736,7 @@ include 'header.php'; ?>
 
 
                     <h3
-                        class="text-2xl md:text-3xl font-black text-gray-900 uppercase leading-tight mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                        class="text-2xl md:text-3xl font-black text-gray-900 uppercase leading-tight mb-2 transition-colors duration-300">
                         AF Porto
                     </h3>
                     <p class="text-blue-600 text-sm font-semibold uppercase tracking-wider mb-4">Juniores Feminino Fut7
@@ -771,11 +762,8 @@ include 'header.php'; ?>
             </div>
 
 
-            <div class="relative reveal from-bottom select-none"
+            <div class="group relative reveal from-bottom select-none"
                 style="transition-delay: 300ms; -webkit-tap-highlight-color: transparent;">
-                <div
-                    class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-500 rounded-2xl opacity-0 group-hover:opacity-100 blur transition-all duration-500">
-                </div>
                 <div
                     class="relative bg-white p-6 border border-gray-200 rounded-2xl h-full flex flex-col transition-all duration-500 shadow-xl shadow-blue-500/10">
 
@@ -793,7 +781,7 @@ include 'header.php'; ?>
 
 
                     <h3
-                        class="text-2xl md:text-3xl font-black text-gray-900 uppercase leading-tight mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                        class="text-2xl md:text-3xl font-black text-gray-900 uppercase leading-tight mb-2 transition-colors duration-300">
                         Torneio Interassociações
                     </h3>
                     <p class="text-blue-600 text-sm font-semibold uppercase tracking-wider mb-4">Juniores Feminino
@@ -820,11 +808,8 @@ include 'header.php'; ?>
             </div>
 
 
-            <div class="relative reveal from-bottom select-none"
+            <div class="group relative reveal from-bottom select-none"
                 style="transition-delay: 300ms; -webkit-tap-highlight-color: transparent;">
-                <div
-                    class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-500 rounded-2xl opacity-0 group-hover:opacity-100 blur transition-all duration-500">
-                </div>
                 <div
                     class="relative bg-white p-6 border border-gray-200 rounded-2xl h-full flex flex-col transition-all duration-500 shadow-xl shadow-blue-500/10">
 
@@ -842,7 +827,7 @@ include 'header.php'; ?>
 
 
                     <h3
-                        class="text-2xl md:text-3xl font-black text-gray-900 uppercase leading-tight mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                        class="text-2xl md:text-3xl font-black text-gray-900 uppercase leading-tight mb-2 transition-colors duration-300">
                         Liga Feminina Divisão de Elite
                     </h3>
                     <p class="text-blue-600 text-sm font-semibold uppercase tracking-wider mb-4">Iniciados Feminino
@@ -867,11 +852,8 @@ include 'header.php'; ?>
                 </div>
             </div>
 
-            <div class="relative reveal from-bottom select-none"
+            <div class="group relative reveal from-bottom select-none"
                 style="transition-delay: 300ms; -webkit-tap-highlight-color: transparent;">
-                <div
-                    class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-500 rounded-2xl opacity-0 group-hover:opacity-100 blur transition-all duration-500">
-                </div>
                 <div
                     class="relative bg-white p-6 border border-gray-200 rounded-2xl h-full flex flex-col transition-all duration-500 shadow-xl shadow-blue-500/10">
 
@@ -889,7 +871,7 @@ include 'header.php'; ?>
 
 
                     <h3
-                        class="text-2xl md:text-3xl font-black text-gray-900 uppercase leading-tight mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                        class="text-2xl md:text-3xl font-black text-gray-900 uppercase leading-tight mb-2 transition-colors duration-300">
                         Liga Feminina Divisão de Elite
                     </h3>
                     <p class="text-blue-600 text-sm font-semibold uppercase tracking-wider mb-4">Juniores Feminino
