@@ -631,7 +631,8 @@ include 'header.php'; ?>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-8">
 
 
-            <div class="group relative reveal from-bottom" style="transition-delay: 0ms;">
+            <div class="relative reveal from-bottom select-none"
+                style="transition-delay: 0ms; -webkit-tap-highlight-color: transparent;">
                 <div
                     class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-500 rounded-2xl opacity-0 group-hover:opacity-100 blur transition-all duration-500">
                 </div>
@@ -676,7 +677,8 @@ include 'header.php'; ?>
             </div>
 
 
-            <div class="group relative reveal from-bottom" style="transition-delay: 150ms;">
+            <div class="relative reveal from-bottom select-none"
+                style="transition-delay: 150ms; -webkit-tap-highlight-color: transparent;">
                 <div
                     class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-500 rounded-2xl opacity-0 group-hover:opacity-100 blur transition-all duration-500">
                 </div>
@@ -721,7 +723,8 @@ include 'header.php'; ?>
             </div>
 
 
-            <div class="group relative reveal from-bottom" style="transition-delay: 300ms;">
+            <div class="relative reveal from-bottom select-none"
+                style="transition-delay: 300ms; -webkit-tap-highlight-color: transparent;">
                 <div
                     class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-500 rounded-2xl opacity-0 group-hover:opacity-100 blur transition-all duration-500">
                 </div>
@@ -768,7 +771,8 @@ include 'header.php'; ?>
             </div>
 
 
-            <div class="group relative reveal from-bottom" style="transition-delay: 300ms;">
+            <div class="relative reveal from-bottom select-none"
+                style="transition-delay: 300ms; -webkit-tap-highlight-color: transparent;">
                 <div
                     class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-500 rounded-2xl opacity-0 group-hover:opacity-100 blur transition-all duration-500">
                 </div>
@@ -816,7 +820,8 @@ include 'header.php'; ?>
             </div>
 
 
-            <div class="group relative reveal from-bottom" style="transition-delay: 300ms;">
+            <div class="relative reveal from-bottom select-none"
+                style="transition-delay: 300ms; -webkit-tap-highlight-color: transparent;">
                 <div
                     class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-500 rounded-2xl opacity-0 group-hover:opacity-100 blur transition-all duration-500">
                 </div>
@@ -862,7 +867,8 @@ include 'header.php'; ?>
                 </div>
             </div>
 
-            <div class="group relative reveal from-bottom" style="transition-delay: 300ms;">
+            <div class="relative reveal from-bottom select-none"
+                style="transition-delay: 300ms; -webkit-tap-highlight-color: transparent;">
                 <div
                     class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-500 rounded-2xl opacity-0 group-hover:opacity-100 blur transition-all duration-500">
                 </div>
