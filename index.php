@@ -603,6 +603,27 @@ include 'header.php'; ?>
                     <p class="text-blue-600 font-semibold text-xs">Sub-18</p>
                 </div>
 
+
+                <div class="hidden md:flex items-center px-2">
+                    <div class="w-8 h-[2px] bg-gradient-to-r from-blue-300 to-blue-500"></div>
+                </div>
+                <div class="flex md:hidden items-center py-1">
+                    <i class="fas fa-chevron-down text-blue-500 text-sm"></i>
+                </div>
+
+                <div class="flex flex-col items-center group">
+                    <div
+                        class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-gray-50 border border-gray-200 p-3 flex items-center justify-center transition-transform duration-300 group-hover:scale-110 shadow-xl shadow-blue-500/10">
+                        <img src="fotosmariana/portugal.png" alt="Portugal Sub-19" class="w-full h-full object-contain">
+                    </div>
+                    <h4 class="mt-3 text-sm md:text-base font-bold text-gray-800">Portugal</h4>
+                    <p class="text-blue-600 font-semibold text-xs">Sub-19</p>
+                </div>
+
+
+
+
+
             </div>
         </div>
 
