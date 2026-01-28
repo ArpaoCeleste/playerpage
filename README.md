@@ -117,7 +117,7 @@ Website: [marianaqueiros.pt](https://marianaqueiros.pt/)
 
 ## License
 
-This project is proprietary and created for Mariana Queirós.
+This project is licensed under the MIT License.
 
 ## Author
 
@@ -236,7 +236,7 @@ Website: [marianaqueiros.pt](https://marianaqueiros.pt/)
 
 ## Licença
 
-Este projeto é proprietário e criado para Mariana Queirós.
+Este projeto está licenciado sob a Licença MIT.
 
 ## Autor
 
