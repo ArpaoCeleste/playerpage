@@ -497,6 +497,8 @@ include 'header.php'; ?>
 
 <script>
     const allPhotos = [
+    { src: 'fotosmariana/imagem20262.jpg', caption: 'Taça de Portugal 2025/2026' },
+       { src: 'fotosmariana/imagem20261.jpg', caption: 'Taça de Portugal 2025/2026' },
         { src: 'fotosmariana/novaimagemnova1.jpg', caption: 'Campeonato 2025/2026' },
         { src: 'fotosmariana/novaimagemnova2.jpg', caption: 'Campeonato 2025/2026' },
         { src: 'fotosmariana/novaimagemnova3.jpg', caption: 'Campeonato 2025/2026' },

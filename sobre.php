@@ -256,7 +256,7 @@ include 'header.php';
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 reveal from-bottom">
             <div class="info-card-container text-center">
-                <p class="text-4xl font-black text-blue-400 counter" data-target="46">0</p>
+                <p class="text-4xl font-black text-blue-400 counter" data-target="52">0</p>
                 <p class="text-xs text-gray-400 uppercase">Jogos Seniores</p>
             </div>
             <div class="info-card-container text-center">
@@ -295,7 +295,7 @@ include 'header.php';
                             <td class="py-2 flex items-center gap-2">
                                 <img src="fotosmariana/FCPortologo.png" class="h-5 w-auto"> FC Porto Fem. B
                             </td>
-                            <td class="text-center py-2">2</td>
+                            <td class="text-center py-2">3</td>
                             <td class="text-center py-2">-</td>
                             <td class="text-center py-2">-</td>
                         </tr>
@@ -304,7 +304,7 @@ include 'header.php';
                             <td class="py-2 flex items-center gap-2">
                                 <img src="fotosmariana/FCPortologo.png" class="h-5 w-auto"> FC Porto Fem.
                             </td>
-                            <td class="text-center py-2">5</td>
+                            <td class="text-center py-2">10</td>
                             <td class="text-center py-2">-</td>
                             <td class="text-center py-2">2</td>
                         </tr>
@@ -328,7 +328,7 @@ include 'header.php';
                         </tr>
                         <tr class="font-bold text-blue-400 border-t border-blue-500/30">
                             <td class="py-2" colspan="2">Total</td>
-                            <td class="text-center py-2">46</td>
+                            <td class="text-center py-2">52</td>
                             <td class="text-center py-2">3</td>
                             <td class="text-center py-2">3</td>
                         </tr>

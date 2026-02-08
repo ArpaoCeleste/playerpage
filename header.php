@@ -16,7 +16,7 @@
 
 
     <meta name="description"
-        content="Mariana Queirós - Futebolista profissional do FC Porto Feminino. Médio, 17 anos, internacional portuguesa Sub-18. Estatísticas, carreira e momentos especiais.">
+        content="Mariana Queirós - Futebolista profissional do FC Porto Feminino. Central, 17 anos, internacional portuguesa Sub-18. Estatísticas, carreira e momentos especiais.">
     <meta name="keywords"
         content="Mariana Queirós, FC Porto Feminino, futebol feminino, jogadora FC Porto, Portugal Sub-18, futebolista portuguesa, Santo Tirso">
     <meta name="author" content="Mariana Queirós">
@@ -27,7 +27,7 @@
     <meta property="og:title"
         content="<?php echo isset($pageTitle) ? $pageTitle : 'Mariana Queirós - FC Porto Feminino'; ?>">
     <meta property="og:description"
-        content="Futebolista profissional do FC Porto Feminino. Médio, 17 anos, internacional portuguesa Sub-18.">
+        content="Futebolista profissional do FC Porto Feminino. Central, 17 anos, internacional portuguesa Sub-18.">
     <meta property="og:image" content="fotosmariana/fotosobre.jpg">
 
 
@@ -35,7 +35,7 @@
     <meta name="twitter:title"
         content="<?php echo isset($pageTitle) ? $pageTitle : 'Mariana Queirós - FC Porto Feminino'; ?>">
     <meta name="twitter:description"
-        content="Futebolista profissional do FC Porto Feminino. Médio, 17 anos, internacional portuguesa Sub-18.">
+        content="Futebolista profissional do FC Porto Feminino. Central, 17 anos, internacional portuguesa Sub-18.">
 
 
     <meta name="theme-color" content="#0b0216">
@@ -78,7 +78,7 @@
         "height": "170cm",
         "gender": "Female",
         "knowsLanguage": "Portuguese",
-        "disambiguatingDescription": "Futebolista pé direito, Defesa Central / Médio do FC Porto.",
+        "disambiguatingDescription": "Futebolista pé direito, Defesa Central / Lateral do FC Porto.",
         "nationality": {
             "@type": "Country",
             "name": "Portugal"
