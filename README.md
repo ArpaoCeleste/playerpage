@@ -10,7 +10,7 @@
 
 <div id="english">
 
-### 📌 Index
+### Index
 - [About](#about)
 - [Features](#features)
 - [Technologies](#technologies)
@@ -143,7 +143,7 @@ ArpaoCeleste
 
 <div id="portuguese">
 
-### 📌 Índice
+### Índice
 - [Sobre](#sobre)
 - [Funcionalidades](#funcionalidades)
 - [Tecnologias](#tecnologias)
