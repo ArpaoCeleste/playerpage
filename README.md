@@ -10,6 +10,20 @@
 
 <div id="english">
 
+### 📌 Index
+- [About](#about)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Project Structure](#project-structure)
+- [Pages](#pages)
+- [Installation](#installation)
+- [Requirements](#requirements)
+- [Live Demo](#live-demo)
+- [License](#license)
+- [Author](#author)
+
+---
+
 ## About
 
 Official portfolio website for Mariana Queirós, professional football player at FC Porto Feminino. The website showcases her career trajectory, achievements, media gallery, and professional highlights.
@@ -128,6 +142,20 @@ ArpaoCeleste
 ---
 
 <div id="portuguese">
+
+### 📌 Índice
+- [Sobre](#sobre)
+- [Funcionalidades](#funcionalidades)
+- [Tecnologias](#tecnologias)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Páginas](#páginas)
+- [Instalação](#instalação)
+- [Requisitos](#requisitos)
+- [Demo ao Vivo](#demo-ao-vivo)
+- [Licença](#licença)
+- [Autor](#autor)
+
+---
 
 ## Sobre
 

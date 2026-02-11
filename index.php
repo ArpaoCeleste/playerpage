@@ -75,6 +75,8 @@ include 'header.php'; ?>
             opacity: 0.1;
         }
 
+        
+
         100% {
             transform: translateY(110vh);
             opacity: 0;
